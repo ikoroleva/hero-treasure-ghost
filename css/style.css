@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 800px;
+    height: 600px;
+    background: transparent url('../img/tiles.jpg') left top/400px 400px repeat scroll;
+    position: relative;
+}
+
+.hero,
+.ghost,
+.treasure {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: transparent center/contain no-repeat scroll;
+}
+
+.victory {
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    top: 200px;
+    height: 150px;
+    background: transparent center/contain no-repeat scroll;
+}
+
+.defeat {
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    top: 200px;
+    height: 150px;
+    background: transparent center/contain no-repeat scroll;
+}
+
+.hero {
+    background-image: url('../img/hero.png');
+}
+
+.ghost {
+    background-image: url('../img/ghost.png');
+}
+
+.treasure {
+    background-image: url('../img/treasure.png');
+}
+
+.victory {
+    background-image: url('../img/you-win.png');
+    display: none;
+}
+
+.defeat {
+    background-image: url('../img/game-over.png');
+    display: none;
+}
+
+
+
+
+
+.start_btn {
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: #111;
+    padding: 0 25px;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+
+.start_btn:active {
+    background-color: #fabfb8;
+}
